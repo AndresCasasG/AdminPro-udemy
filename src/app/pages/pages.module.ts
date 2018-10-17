@@ -13,6 +13,8 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
     declarations: [
@@ -22,6 +24,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         Graficas1Component,
         IncrementadorComponent,
         AccountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     imports: [
         CommonModule,
@@ -30,9 +34,13 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         PAGES_ROUTING
     ],
     exports: [
+        PagesComponent,
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
+        IncrementadorComponent,
+        AccountSettingsComponent,
+        PromesasComponent
     ],
     providers: [],
 })
